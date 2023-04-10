@@ -2,12 +2,19 @@ name: Manual Trigger From GitHub
 on:
   workflow_dispatch
 jobs:
-  build:
+  asdf:
     runs-on: ubuntu-latest
     steps:
 
       - name: First Step
+        # description: "This is the description of the First Step"
         run: echo "This is the First Step"
         
       - name: Second Step
         run: echo "This is the Second Step"
+        
+      - name: Checkout Repo Contents
+        uses: actions/checkout@v2
+
+      - name: After Checkout
+        run: echo "This Output is after Checkout"
