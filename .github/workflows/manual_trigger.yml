@@ -7,7 +7,6 @@ jobs:
     steps:
 
       - name: First Step
-        description: "This is the description of the First Step"
         run: echo "This is the First Step"
         
       - name: Second Step
