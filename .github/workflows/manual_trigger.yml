@@ -1,3 +1,10 @@
 name: Manual Trigger From GitHub
 on:
   workflow_dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: First Step
+        run: echo "This is the First Step"
