@@ -8,3 +8,6 @@ jobs:
 
       - name: First Step
         run: echo "This is the First Step"
+        
+      - name: Second Step
+        run: echo "This is the Second Step"
