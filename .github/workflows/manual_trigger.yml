@@ -18,3 +18,9 @@ jobs:
 
       - name: After Checkout
         run: echo "This Output is after Checkout"
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      # - name: Installing Requirements
+      - name: Running Python Script
+        run: python my_script.py
